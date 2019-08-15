@@ -8,7 +8,7 @@
 
     <div>@include('includes.form_error')</div>
 
-    {!! Form::open(['method'=>'POST', 'action'=>'AdminUsersController@store', 'file'=>true]) !!}
+    {!! Form::open(['method'=>'POST', 'action'=>'AdminUsersController@store', 'files'=>true]) !!}
 
         <div class="form-group">
             {!! Form::label('name', 'Name:') !!}
