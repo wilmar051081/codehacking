@@ -5,6 +5,18 @@
 
 @section('content')
 
+    @if(Session::has('deleted_user'))
+
+        <h1 class="bg-danger text-center">{{session('deleted_user')}}</h1>
+
+        @endif
+
+    @if(Session::has('updated_user'))
+
+        <h1 class="bg-primary text-center">{{session('updated_user')}}</h1>
+
+    @endif
+
     <h1>Users</h1>
 
     <table class="table table-striped">
